@@ -1,6 +1,3 @@
----Discord: .gg/ballasdhc---
-----Belia/iffunizz----------
-
 local KeylandV01 = Instance.new("ScreenGui")
 local gui = Instance.new("Frame")
 local nametag = Instance.new("Frame")
