@@ -1,12 +1,7 @@
-for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-		if v:IsA'MeshPart' then
-			v:Destroy()
-		end
-	end
 	wait()
 	game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function()
-		local TargetPlr = script.Parent.Parent.TextBox_Target.Text;
-		local target = game.Players:FindFirstChild(TargetPlr)
+		local TargetPlr = script.Parent.PareFindFirstChildnt.TextBox_Target.Text;
+		local target = game.Players..(TargetPlr)
 		local lp = game.Players.LocalPlayer
 		local ch = lp.Character
 		local tool = lp.Backpack.Wallet
@@ -29,3 +24,8 @@ for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 		firetouchinterest(targetroot, tool.Handle, 0)
 		firetouchinterest(targetroot, tool.Handle, 1)
 	end)
+	for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+		if v:IsA'MeshPart' then
+			v:Destroy()
+		end
+	end
